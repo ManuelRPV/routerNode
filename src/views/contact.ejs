@@ -1,0 +1,31 @@
+<%- include ('templates/header.ejs') %>
+<body>
+    <%- include('templates/navigation')  %> 
+    <h1>Contactame</h1>
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="card bg-dark text-white text-center">
+            <div class="card-hear">
+                <h3>Contactame</h3>
+            </div>
+
+            <div class="card-body text-start">
+                <form>
+                    <div class="mb-3">
+                        <label for="email">E-mail</label>
+                        <input type="email" placeholder="E-mail" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" rows="3" class="form-control" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-block">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include('templates/footer')  %> 
+</body>
+</html>
